@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1 id="city">CITY</h1>
-        <div class="temp" onclick="display()"><p id="temp">click here to refresh</p>
+      <h1 id="city">CITY</h1>
+      <div class="temp" onclick="display()">
+        <p id="temp">click here to refresh</p>
+      </div>
+      <div class="details">
+        <ul>
+          <li id="pressure">Pressure:</li>
+          <li id="wind-speed">Speed:</li>
+          <li id="wind-direction">Direction:</li>
+          <li id="humidity">Humidity:</li>
+        </ul>
+      </div>
+      <div class="control">
+        <p id="p">Enter a city name</p>
+        <input id="input" type="text" />
+        <button id="update" type="submit" onclick="update()">Update</button>
+      </div>
+      <div class="forecast">
+        <div class="day1">
+          <p id="day-one">Day 1</p>
+          <p id="day-one-cloud-cover">Weather</p>
+          <p id="day-one-temp">°C</p>
         </div>
-        <div class="details">
-            <ul>
-                <li id="pressure">Pressure:</li>
-                <li id="wind-speed">Speed:</li>
-                <li id="wind-direction">Direction:</li>
-                <li id="humidity">Humidity:</li>
-            </ul>
+        <div class="day2">
+          <p id="day-two">Day 2</p>
+          <p id="day-two-cloud-cover">Weather</p>
+          <p id="day-two-temp">°C</p>
         </div>
-        <div class="control">
-            <p id="p">Enter a city name</p>
-            <input id="input" type="text">
-            <button id="update" type="submit" onclick="update()">Update</button>
+        <div class="day3">
+          <p id="day-three">Day 3</p>
+          <p id="day-three-cloud-cover">Weather</p>
+          <p id="day-three-temp">°C</p>
         </div>
+        <div class="day4">
+          <p id="day-four">Day 4</p>
+          <p id="day-four-cloud-cover">Weather</p>
+          <p id="day-four-temp">°C</p>
+        </div>
+        <div class="day5">
+          <p id="day-five">Day 5</p>
+          <p id="day-five-cloud-cover">Weather</p>
+          <p id="day-five-temp">°C</p>
+        </div>
+      </div>
     </div>
-    
+
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
